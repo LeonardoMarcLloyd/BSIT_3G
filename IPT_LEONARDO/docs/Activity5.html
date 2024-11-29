@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Size Changer</title>
+    <style>
+        #text {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Font Size Changer</h2>
+    <p id="text">This text can modify size by pressing buttons</p>
+    <button onclick="increaseFontSize()">Increase Font Size</button>
+    <button onclick="decreaseFontSize()">Decrease Font Size</button>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>MDAS Calculator</h2>
+    <p>Enter five numbers:</p>
+    <input type="number" id="num1" placeholder="Number 1">
+    <input type="number" id="num2" placeholder="Number 2">
+    <input type="number" id="num3" placeholder="Number 3">
+    <input type="number" id="num4" placeholder="Number 4">
+    <input type="number" id="num5" placeholder="Number 5">
+    <button onclick="calculateMDAS()">Calculate</button>
+
+    <p>Result: <span id="result"></span></p>
+
+    <script>
+        function calculateMDAS() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let num3 = parseFloat(document.getElementById("num3").value);
+            let num4 = parseFloat(document.getElementById("num4").value);
+            let num5 = parseFloat(document.getElementById("num5").value);
+            let result = (num1 * num2) / num3 + num4 - num5;
+            document.getElementById("result").innerText = result;
+        }
+
+        function increaseFontSize() {
+            let textElement = document.getElementById("text");
+            let currentSize = parseFloat(window.getComputedStyle(textElement, null).getPropertyValue('font-size'));
+            textElement.style.fontSize = (currentSize + 2) + 'px';
+        }
+
+        function decreaseFontSize() {
+            let textElement = document.getElementById("text");
+            let currentSize = parseFloat(window.getComputedStyle(textElement, null).getPropertyValue('font-size'));
+            textElement.style.fontSize = (currentSize - 2) + 'px';
+        }
+    </script>
+</body>
+</html>

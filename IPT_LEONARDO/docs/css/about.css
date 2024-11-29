@@ -1,0 +1,138 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(../img/bgc.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    background-size: cover;
+}
+#p {
+    margin: 0px 0px 0px 15px;
+    font-size: 80px;
+    color: white;
+}
+
+#amana {
+    color: white;
+    margin: 40px 0px 0px 0px;
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    margin-right:20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a{
+    background-color: white;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:30px;
+    padding-right:30px;
+    transition: background-color 0.3s, color 0.3s; 
+
+}
+
+a:hover {
+    background-color: black;
+    color:white;
+}
+
+.active a{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 190);
+}
+
+.pamana{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+    padding-top:100px;
+}
+article{
+    width: 800px;
+    display:flex;
+}
+article h1{
+    font-size:90px;
+    text-transform: uppercase;
+    color:rgb(255, 255, 210);
+    border:8px solid rgb(255, 255, 179);
+    padding-right:50px;
+    border-top:none;
+    border-left:none;
+    border-bottom:none;
+    height:auto;
+    text-align: right;
+    align-content: center;
+}
+article img{
+    height: 690px;
+}
+.aboutp h3{
+    text-align: center;
+    padding:50px;
+    font-size: 40px;
+    color:white;
+}
+.aboutp p{
+    color:white;
+    width:500px;    
+    font-size:18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    text-indent: 30px;
+    font-style: italic;
+}
+.imgs{
+    justify-content: center;
+    display: flex;
+}
+.imgs img{
+    width:30px;
+    filter:invert(1);
+    cursor: pointer;
+
+}
+
+.imgs a {
+    background-color: transparent;
+}

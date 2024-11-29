@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, maximumscale=1">
+
+        <title>Welcome!</title>
+    
+    </head>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            
+            justify-content: center;
+            align-items: center;
+        }
+        .firstpage{
+            border:0px solid red;
+            background-image:url(bck.jpg);
+            width: 1600px;
+            height:737px;
+            background-size: cover;
+        }
+        nav {
+            width: 100%;
+            padding:20px 0px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0; 
+            margin: 0; 
+            display: flex; 
+            justify-content: center; /* Center items horizontally */
+        }
+       
+        li {
+            margin: 0 15px; /* Space between items */
+        }
+        nav a {
+            text-decoration: none; /* Remove underline from links */
+            color: white; /* Link color */
+            display: block; /* Make the link block level for better styling */
+            padding: 10px 5px; /* Add some padding */
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size:17px;
+            width:80px;
+            text-align: center;
+            border-bottom: 5px solid transparent;
+        }
+        .active {
+     
+            border-radius:3px;
+            width:75;
+            color:white;
+            border-bottom: 5px solid white;
+            
+        }
+        nav a:hover {
+            background-color: transparent;
+            border-radius:3px;
+            width:75;
+            color:rgb(255, 255, 255);
+            border-bottom: 5px solid #f0ffaff0;
+            
+        }
+        h2{
+            display:absolute;
+            margin-top:-40px;
+            margin-left:80px;
+        }
+       
+        .logo img{
+            width:100px;
+            position:absolute;
+            margin-top:-40px;
+            margin-left:10px;
+        }
+        .logo h2 a{
+            font-size:30px;
+            color:white;
+            font-family: 'Trebuchet MS', sans-serif;
+            letter-spacing: 4px;
+            text-transform:uppercase;
+            text-decoration: none;
+        }
+       .nameq{
+            color:white;
+            font-family: 'Trebuchet MS', sans-serif;
+            position: absolute;
+            margin-top:200px;
+            margin-left:150px;
+            width: 700px;
+
+       }
+       .nameq button[type=submit]{  
+            background-color: white;
+            border:none;
+            width:160px;
+            height:50px;
+            text-align: left;
+            margin-top: 20px;
+            text-indent: 10px;
+            border-radius: 5px;
+            font-family: 'Trebuchet MS', sans-serif;
+            color:black;
+            cursor: pointer;
+            display: inline;
+         
+       }
+
+       .nameq button[type=submit]:hover{  
+            background-color: black;
+            border:none;
+            width:160px;
+            text-align: left;
+            color:white;
+            font-size:20px;
+            margin-top: 20px;
+       }
+       .leftborder{
+            text-indent: 10px;
+            border-left:5px solid white;
+       }
+       .email{
+            position:absolute;
+            color:white;
+            padding:5px;
+            text-indent: 5px;
+            text-align: center;
+            font-size:14px;
+            font-family: 'Trebuchet MS', sans-serif;
+            margin-left:1280px;
+            margin-top:-55px;
+            display:flex;
+       }
+       
+       .email:hover{
+            
+            text-decoration: underline;
+       }
+       .contact [type=submit]{
+            margin-top:420px;
+            color:white;
+            margin-left:160px;
+            background-color: black;
+            width: 160px;
+            display:flex;
+            height:50px;
+            align-items: center;
+            padding:20px;
+            text-indent: 10px;
+            font-size:20px;
+            border:none;
+            border-radius: 5px;
+            filter: invert(100%);
+        }
+        .contact [type=submit]:hover {
+            background-color: black;
+            color:white;
+            width: 160px;
+            display:flex;
+            height:50px;
+            align-items: center;
+            padding:20px;
+            text-indent: 10px;
+            font-size:20px;
+            border:none;
+            border-radius: 5px;
+            cursor: pointer;
+            filter: invert(0%);
+
+        }
+    
+
+    </style>
+    <body>
+        <div class="firstpage">
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+                <div class="emailb">
+                    <a href="#"><p class="email"><img src="envelope.svg" class="imaili" style="width:20px; display:block; filter: invert(100%);">marc.leonardo.88899@gmail.com</p></a>
+                </div>
+            <div class="logo">
+                <a href="#"><img src="whitep.png" width="20px"></a>
+                <h2><a href="#">inalaya</a></h2>
+                
+            </div>
+            <div class="nameq">
+                <div class="leftborder">
+                    <h1 style="font-size: 20px; margin-bottom: 20px; font-weight: lighter;">Hey, I'm Marc Jadraque Leonardo</h1>
+                    <p style="font-family: arial;  font-weight: bold; margin-top: 5px; margin-left: 10px; font-size: 50px;">I enjoy designing websites and developing databases</p>
+                </div>
+                
+            </div>
+            <div class="contact ">
+               <button type="submit"><img src="phone-call.svg" id="phonecall" style="width:25px; filter: invert(100%); "><p>Contact</p></button>
+            </div>
+        </div>
+
+
+    </body>
+</html>
